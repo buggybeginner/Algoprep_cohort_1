@@ -53,7 +53,8 @@ async function fetchWeather(location) {
     if (response.status == 400) {
         alert("location is invalid");
         return null;
-    } else if (response.status == 200) {
+    } 
+    else if (response.status == 200) {
         const json = await response.json();
         return json;
     }
